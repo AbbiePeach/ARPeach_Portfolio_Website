@@ -24,7 +24,7 @@ html[data-theme="light"] {
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github: #24292e;
+  --col-icon-tiktok: #ff0050;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail: rgb(209, 82, 82);
   --col-icon-google-scholar: #3cba54;
@@ -52,7 +52,7 @@ html[data-theme="dark"] {
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github: #24292e;
+  --col-icon-tiktok: #ff0050;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail: rgb(209, 82, 82);
   --col-icon-google-scholar: #3cba54;
@@ -73,7 +73,7 @@ html[data-theme="dark"] {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  -webkit-box-shadow: inset 0 0 6px #ffae7e;
   border-radius: 2px;
   background: #f1f1f1;
 }
@@ -81,8 +81,8 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   max-height: 10px;
-  -webkit-box-shadow: inset 0 0 6px #bb86fc;
-  background: #bb86fc;
+  -webkit-box-shadow: inset 0 0 6px #ffae7e;
+  background: #FFE5B4;
   transition: 0.3s;
 }
 
@@ -116,7 +116,7 @@ body {
 #btnScrollToTop {
   width: 50px;
   height: 50px;
-  background-color: #bb86fc;
+  background-color: #ffae7e;
   color: #fff;
   margin: 8px;
   border: none;
@@ -234,6 +234,10 @@ html {
   font-weight: bold;
 }
 
+.navbar-brand img {
+height: 80px;
+}
+
 .navbar {
   color: #000000;
   background-color: #fff;
@@ -266,7 +270,7 @@ html {
   background-color: navy;
   border-radius: 50px;
   transition: all 0.9s;
-  background-color: #f7ca33;
+  background-color: #ffae7e;
 }
 
 .dark_toggler:checked {
@@ -278,7 +282,7 @@ html {
 .dark_toggler:checked:before {
   transform: translate(150%);
   transition: all 0.9s;
-  background-color: #bb86fc;
+  background-color: #ffae7e;
 }
 /* end of dark mode toggle switch button */
 
@@ -395,7 +399,7 @@ color: #ffffff !important;
       margin-right: auto;
       bottom: 0;
       width: 32%;
-      border-bottom: 3px solid #6a00bb;
+      border-bottom: 3px solid #ffae7e;
   }
   
   .nav-item-hover::after {
@@ -406,7 +410,7 @@ color: #ffffff !important;
       height: 0.15em;
       bottom: 0;
       width: 0%;
-      background-color: #6a00bb;
+      background-color: #ffae7e;
       transition: all ease-in-out 280ms;
   }
   
@@ -433,7 +437,7 @@ html[light-mode="light"] .nav-link{
   color: #000000 !important;
 }
 html[light-mode="light"] .nav-link:hover{
-  color: 	rgb(106, 0, 187) !important;
+  color: 	#ffae7e !important;
 }
 html[light-mode="light"] .navbar-brand:hover{
   color: #000000 !important;
@@ -683,23 +687,49 @@ Rotate Transition in foote Soical Icon
 
 /*
 -----------------------------
- GITHUB MICROANIMATION
+ TIKTOK MICROANIMATION
 -----------------------------
 */
 
-.github:hover #arm {
-  transform-origin: bottom right;
-  animation: moveArm 1s infinite alternate;
+.tiktok-icon {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  padding: 15px;
 }
 
-@keyframes moveArm {
+.tiktok-icon:hover {
+  animation: shaking .2s steps(6, end) infinite;
+  max-width: 100%;
+}
+
+@keyframes shaking {
   0% {
-      transform: rotate(10deg);
+    filter: drop-shadow(3px 3px 0px #0ff) drop-shadow(-3px -3px 0px #f00);
+    transform: translate(1px, 1px);
+  }
+  20% {
+    filter: drop-shadow(-3px 3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+    transform: translate(-2px, 1px);
+  }
+  40% {
+    filter: drop-shadow(3px -3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+    transform: translate(1px, -1px);
+  }
+  60% {
+    filter: drop-shadow(-3px -3px 0px #0ff) drop-shadow(3px 3px 0px #f00);
+    transform: translate(-1px, -1px);
+  }
+  80% {
+    filter: drop-shadow(-2px 3px 0px #0ff) drop-shadow(-3px 2px 0px #f00);
+    transform: translate(2px, 0px);
   }
   100% {
-      transform: rotate(-10deg);
+    filter: drop-shadow(-3px 1px 0px #0ff) drop-shadow(1px -3px 0px #f00);
+    transform: translate(1px, 1px);
   }
 }
+
 
 
 /* twitter SVG micro animation */
@@ -729,7 +759,7 @@ Rotate Transition in foote Soical Icon
 
 /* github SVG Micro animation */
 
-.github-icon-footer {
+.tiktok-icon-footer {
   margin-bottom: 8px;
   width: 35px;
 }
@@ -774,17 +804,18 @@ Rotate Transition in foote Soical Icon
   background: #2b2a2A;
 }
 
-.rounded-social-buttons .social-button.github {
-  fill: #ffff;
+.rounded-social-buttons .social-button.tiktok {
+  fill: #000000;
   background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
-.rounded-social-buttons .social-button.github:hover,
-.rounded-social-buttons .social-button.github:focus {
-  color: #000000;
+.rounded-social-buttons .social-button.tiktok:hover,
+.rounded-social-buttons .social-button.tiktok:focus {
+  color: #ff0050;
   background: #2b2a2A;
 }
+
 
 
 /************
@@ -800,7 +831,7 @@ Contact Form In Footer
   font-size: 25px;
   font-weight: 200;
   line-height: 22px;
-  border-bottom: 3px solid #bb86fc;
+  border-bottom: 3px solid #ffae7e;
 }
 
 .form-header {
@@ -829,7 +860,7 @@ form {
 }
 
 .form-style-6 h1 {
-  background: #bb86fc;
+  background: #ffae7e;
   font-size: 140%;
   font-weight: 300;
   text-align: center;
@@ -859,7 +890,7 @@ form {
   background: transparent;
   margin-bottom: 4%;
   border: #000;
-  border-bottom: 2px solid #bb86fc;
+  border-bottom: 2px solid #ffae7e;
   padding: 3%;
   color: rgb(107, 105, 105);
   font: 95% Arial, Helvetica, sans-serif;
@@ -876,9 +907,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-  box-shadow: 0 0 5px #bb86fc;
+  box-shadow: 0 0 5px #ffae7e;
   padding: 3%;
-  border: 1px solid #bb86fc;
+  border: 1px solid #ffae7e;
   border-radius: 2px;
 }
 
@@ -890,8 +921,8 @@ form {
   width: 100%;
   margin-top: 2rem;
   padding: 3%;
-  background: #bb86fc;
-  border-bottom: 2px solid #bb86fc;
+  background: #ffae7e;
+  border-bottom: 2px solid #ffae7e;
   border-radius: 23px;
   border-top-style: none;
   border-right-style: none;
@@ -1031,7 +1062,7 @@ outline: none;
   border-radius: 50px;
   border-style: none;
   transition: 0.5s ease background-color, 0.5s ease box-shadow;
-  background: #bb86fc;
+  background: #ffae7e;
 }
 #lnch_btn {
   position: absolute;
@@ -1091,4 +1122,150 @@ outline: none;
     margin-top: -100px;
     transform: scale(0) rotateZ(-90deg);
   }
+}
+
+
+/*---------------------
+  Portfolio
+-----------------------*/
+.portfolio {
+  background: #100028;
+}
+
+.portfolio__filter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.portfolio__filter li {
+  list-style: none;
+  font-size: 16px;
+  color: #adadad;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+.portfolio__filter li.active {
+  border: 1px solid #00bfe7;
+}
+.portfolio__filter li:last-child {
+  margin-right: 0;
+}
+
+.portfolio__item {
+  margin-bottom: 35px;
+}
+.portfolio__item:hover .portfolio__item__text h4:after {
+  opacity: 1;
+}
+
+.portfolio__item__video {
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 28px;
+}
+.portfolio__item__video .play-btn {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.portfolio__item__text {
+  text-align: center;
+}
+.portfolio__item__text h4 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  position: relative;
+}
+.portfolio__item__text h4:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  content: "";
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  opacity: 0;
+}
+.portfolio__item__text ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 24px;
+  position: relative;
+  color: #adadad;
+}
+.portfolio__item__text ul li:after {
+  position: absolute;
+  right: -16px;
+  top: 0;
+  content: "/";
+}
+.portfolio__item__text ul li:last-child {
+  margin-right: 0;
+}
+.portfolio__item__text ul li:last-child:after {
+  display: none;
+}
+.portfolio__item__text span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #adadad;
+  display: block;
+}
+
+.pagination__option {
+  text-align: center;
+  padding-top: 20px;
+}
+.pagination__option.blog__pagi {
+  padding-top: 5px;
+}
+.pagination__option .arrow__pagination {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.pagination__option .arrow__pagination.left__arrow {
+  margin-right: 26px;
+}
+.pagination__option .arrow__pagination.right__arrow {
+  margin-left: 18px;
+}
+.pagination__option .arrow__pagination span {
+  opacity: 0.5;
+}
+.pagination__option .number__pagination {
+  font-size: 18px;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  background: rgba(242, 242, 242, 0.1);
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 6px;
 }

@@ -14,6 +14,7 @@ html[data-theme="light"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;  
   --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-tiktok: #ff0050;
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
   --col-icon-codeforces:rgb(19, 145, 184);
@@ -33,6 +34,7 @@ html[data-theme="dark"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;
   --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-tiktok: #ff0050;
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
   --col-icon-codeforces:rgb(19, 145, 184);
