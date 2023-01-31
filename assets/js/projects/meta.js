@@ -182,22 +182,20 @@ const projects = [
 
 let projectElements = document.getElementsByClassName("project");
 const background = document.getElementById('background');
-const body = document.body;
+const html = document.documentElement
 const projectcards = document.querySelector(".projectcards");
 
 const openLightbox = (lightbox, video) => {
   lightbox.style.display = 'block';
   background.style.display = 'block';
-  //body.style.overflow = 'hidden';
-  //body.style.maxHeight = '100vh';
+  html.style.overflow = 'hidden';
   video.play();
 };
 
 const closeLightbox = (lightbox, video) => {
   lightbox.style.display = 'none';
   background.style.display = 'none';
-  //body.style.removeProperty('overflow');
-  //body.style.removeProperty('max-height');
+  html.style.removeProperty('overflow');
   video.pause();
 };
 
@@ -208,6 +206,7 @@ const getProjectVideos = () => {
     const video = project.querySelector('.project__video');
     const lightbox = project.querySelector('.project__lightbox');
     const closeBtn = project.querySelector('.project__close');
+    const background = project.querySelector('.project__background');
     
     name.addEventListener('click', function() {
       openLightbox(lightbox, video);
@@ -221,7 +220,7 @@ const getProjectVideos = () => {
       if (event.key === 'Escape') {
         const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
         if (isNotCombinedKey) {
-          closeLightbox(lightbox, background, video);
+          closeLightbox(lightbox, video);
         }
       }
     });
@@ -253,6 +252,8 @@ const showCards = () => {
           <source src="${video}" type="video/mp4">
         </video>
       </div>
+
+      <div class="project__background"></div>
     </div>`
   });
   projectcards.innerHTML = output;
