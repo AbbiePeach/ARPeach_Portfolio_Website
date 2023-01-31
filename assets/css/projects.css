@@ -1,0 +1,68 @@
+.project__name {
+  width: 320px;
+  height: 320px;
+}
+
+#background {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+  z-index: 0;
+}
+
+.project__lightbox {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  z-index: 1002;
+  overflow: visible;
+}
+
+.project__close {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0;
+  padding: 10px 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 100;
+  opacity: 0.9;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.project__close:before {
+  content: "×";
+}
+
+.screen-reader-text {
+  position: absolute;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#background:hover ~ .project__close {
+  display:none;
+}
