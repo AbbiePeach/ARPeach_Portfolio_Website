@@ -249,7 +249,7 @@ const showCards = () => {
         <button class="project__close">
           <span class="screen-reader-text">Close</span>
         </button>
-        <video class="project__video" width="600" controls>
+        <video class="project__video" controls>
           <source src="${video}" type="video/mp4">
         </video>
       </div>
