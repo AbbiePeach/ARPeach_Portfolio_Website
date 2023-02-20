@@ -231,6 +231,10 @@ a:hover {
   font-size: 0.65em;
 }
 
+.projects {
+  height: 65vh;
+}
+
 @media (min-width: 411px) {
   .card .title {
     font-size: 0.8em;
@@ -501,6 +505,18 @@ ul {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .projects {
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects {
+    height: 50vh;
+  }
+}
+
 @media only screen and (max-width: 280px) {
   .menu-content {
     margin-top: -4.5rem;
@@ -509,18 +525,6 @@ ul {
   .card .title-div {
     padding-bottom: 7rem;
     font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .project-box {
-    margin-top: 18rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .project-box {
-    margin-top: 18rem;
   }
 }
 
