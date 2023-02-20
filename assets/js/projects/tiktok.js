@@ -30,7 +30,7 @@ const projects = [
     title: "Angel Devil",
     cardImage: "../assets/images/tiktok/angeldevil.png",
     description: "Pout to turn into devil",
-    video: "../assets/video/tiktok/AngelDevil.mov",
+    video: "../assets/video/tiktok/AngelDevil.mp4",
   },
   {
     title: "Retro Film Camera Effect",
