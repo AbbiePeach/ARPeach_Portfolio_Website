@@ -35,14 +35,14 @@ const exp = [
   },
   {
     title: "Junior Developer",
-    cardImage: "assets/images/experience-page/peel-logo.png",
+    cardImage: "assets/images/experience-page/peel-logo.jpeg",
     place: "Peel Interactive",
     time: "(Oct, 2019 - Jan, 2020)",
     desp: "<p> Created a wide range of bespoke digital experiences, from large-scale projection installations, interactive touchscreen games and motion graphics, to virtual and augmented reality experiences.</p>"
   },
   {
     title: "Digital Designer",
-    cardImage: "assets/images/experience-page/UoL-logo.webp",
+    cardImage: "assets/images/experience-page/UoL-logo.jpeg",
     place: "The University of Leeds",
     time: "(June, 2019 - Jan, 2020)",
     desp: "<p> Created a wide range of bespoke digital experiences, from large-scale projection installations, interactive touchscreen games and motion graphics, to virtual and augmented reality experiences.</p>"

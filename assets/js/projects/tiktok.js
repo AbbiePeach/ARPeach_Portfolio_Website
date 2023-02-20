@@ -3,36 +3,41 @@ AOS.init();
 // Array of object for projects
 const projects = [
   {
-    title: "Snap Spectacles – AR Drums",
+    title: "Pinnochio Nose",
     cardImage: "../assets/images/snap/drums.png",
     description: "Developed the AR Drums for the latest pair of Snap's Spectacles",
     video: "../assets/video/snap/drums.mp4",
   },
   {
-    title: "Break The Bias",
+    title: "Sound Beats Crazy Face",
     cardImage: "../assets/images/snap/breakthebias.png",
-    description: "Lens for International Women's Day",
+    description: "Audio Reactive to any TikTok sound – Created at the TikTok London HQ for the first Creator Camp.",
     video: "../assets/video/snap/BreakTheBias.mp4",
   },
   {
-    title: "Lipton Ice Tea - Summer Smiles",
+    title: "Baby Eyes",
     cardImage: "../assets/images/snap/liptonsnap.png",
     description: "",
     video: "../assets/video/snap/liptonsnap.mp4",
   },
   {
-    title: "Space Portal",
+    title: "Gorgeous gorgeous girls",
     cardImage: "../assets/images/snap/space.png",
     description: "",
     video: "../assets/video/snap/SpacePortal.mp4",
   },
   {
-    title: "A Vixen’s Tale",
+    title: "Angel Devil",
     cardImage: "../assets/images/snap/vixen.png",
-    description: "The Welsh National Opera",
+    description: "Pout to turn into devil",
     video: "../assets/video/snap/vixen.mov",
   },
-  
+  {
+    title: "Retro Film Camera Effect",
+    cardImage: "../assets/images/snap/vixen.png",
+    description: "",
+    video: "../assets/video/snap/vixen.mov",
+  },  
 ];
 
 let projectElements = document.getElementsByClassName("project");
