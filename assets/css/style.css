@@ -699,8 +699,7 @@ Rotate Transition in foote Soical Icon
 }
 
 .tiktok-icon:hover {
-  animation: shaking .2s steps(6, end) infinite;
-  max-width: 100%;
+  animation: shaking .5s steps(6, end) infinite;
 }
 
 @keyframes shaking {
