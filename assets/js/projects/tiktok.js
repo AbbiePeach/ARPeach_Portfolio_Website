@@ -61,7 +61,6 @@ const closeLightbox = (lightbox, video) => {
 
 const getProjectVideos = () => {
   Array.from(projectElements).forEach(function(project) {
-    console.log(project);
     const name = project.querySelector('.project__name');
     const video = project.querySelector('.project__video');
     const lightbox = project.querySelector('.project__lightbox');
