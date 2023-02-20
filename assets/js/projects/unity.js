@@ -3,41 +3,36 @@ AOS.init();
 // Array of object for projects
 const projects = [
   {
-    title: "Pinnochio Nose",
-    cardImage: "../assets/images/tiktok/pinnochio.png",
-    description: "Tap to grow nose",
-    video: "../assets/video/tiktok/pinnochio.mp4",
+    title: "Camden’s Peoples Museum App",
+    cardImage: "../assets/images/snap/drums.png",
+    description: "AR experience showing fashion items made in Camden, London. I made the full experience in Unity – swipe to find the ‘perfect’ combination. Hologram follows the camera 360 degrees.",
+    video: "../assets/video/unity/CamdensFashion.mp4",
   },
   {
-    title: "Sound Beats Crazy Face",
-    cardImage: "../assets/images/tiktok/beats.png",
-    description: "Audio Reactive to any TikTok sound – Created at the TikTok London HQ for the first Creator Camp.",
-    video: "../assets/video/tiktok/beats.mp4",
+    title: "Urban Jungle – Coventry City of Culture AR app",
+    cardImage: "../assets/images/snap/breakthebias.png",
+    description: "AR experience triggered from a marker on the floor that turns into a firey phoenix, then into a portal. I also made the animation & portal vfx.",
+    video: "../assets/video/unity/UJ.mov",
   },
   {
-    title: "Baby Eyes",
-    cardImage: "../assets/images/tiktok/babyeyes.png",
+    title: "Portal – VFX for AR experience",
+    cardImage: "../assets/images/snap/liptonsnap.png",
     description: "",
-    video: "../assets/video/tiktok/BabyEyes.mp4",
+    video: "../assets/video/unity/FirePortal.mov",
   },
   {
-    title: "Gorgeous gorgeous girls",
-    cardImage: "../assets/images/tiktok/gggirls.png",
-    description: "",
-    video: "../assets/video/tiktok/GorgeousGirls.mp4",
+    title: "The Old Operating Theatre",
+    cardImage: "../assets/images/snap/space.png",
+    description: "AR experience in a museum showing a hologram of a famous surgeon telling his story from the early 19th century. I made the iPhone and Android app from start to finish. ",
+    video: "../assets/video/unity/OldOp.mp4",
   },
   {
-    title: "Angel Devil",
-    cardImage: "../assets/images/tiktok/angeldevil.png",
-    description: "Pout to turn into devil",
-    video: "../assets/video/tiktok/AngelDevil.mov",
+    title: "A Vixen’s Tale",
+    cardImage: "../assets/images/snap/vixen.png",
+    description: "The Welsh National Opera",
+    video: "../assets/video/snap/vixen.mov",
   },
-  {
-    title: "Retro Film Camera Effect",
-    cardImage: "../assets/images/tiktok/retro.png",
-    description: "",
-    video: "../assets/video/tiktok/retro.mov",
-  },  
+  
 ];
 
 let projectElements = document.getElementsByClassName("project");

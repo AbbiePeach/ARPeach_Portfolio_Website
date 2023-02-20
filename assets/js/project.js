@@ -21,15 +21,15 @@ const projects = [
   },
   {
     title: "TikTok",
-    cardImage: "assets/images/project-page/tiktoklogo.webp",
-    description: "Flappy bird game built using React.js",
+    cardImage: "assets/images/tiktok/metiktok.jpeg",
+    description: "",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "projects/tiktok.html",
   },
   {
     title: "Unity",
     cardImage: "assets/images/project-page/exercise.jpg",
-    description: "Exercise tracker built using basic redux.",
+    description: "",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: "projects/unity.html",
   },
